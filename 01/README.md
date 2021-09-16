@@ -112,3 +112,5 @@ CHIP DMux {
     And(a=in, b=sel, out=b);
 }
 ```
+
+![](https://github.com/yucing/co110a/blob/master/S__66715651.jpg)

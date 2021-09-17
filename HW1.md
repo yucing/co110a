@@ -15,6 +15,9 @@ CHIP Not {
     Nand(a=in, b=in, out=out);
 }
 ```
+
+![](https://github.com/yucing/co110a/blob/master/picture/Not.png)
+
 ## And
 ```hdl
 /**
@@ -33,6 +36,9 @@ CHIP And {
     Not(in=ab, out=out);
 }
 ```
+
+![](https://github.com/yucing/co110a/blob/master/picture/And.png)
+
 ## Or
 ```hdl
  /**
@@ -53,6 +59,9 @@ CHIP Or {
 }
 
 ```
+
+![](https://github.com/yucing/co110a/blob/master/picture/Or.png)
+
 ## Xor
 ```hdl
 /**
@@ -73,6 +82,9 @@ CHIP Xor {
     Or(a=na, b=nb, out=out);
 }
 ```
+
+![](https://github.com/yucing/co110a/blob/master/picture/Xor.png)
+
 ## Mux
 ```hdl
 /** 
@@ -93,6 +105,9 @@ CHIP Mux {
     Or(a=as, b=bs, out=out);
 }
 ```
+
+![](https://github.com/yucing/co110a/blob/master/picture/Mux.png)
+
 ## Dmux
 ```hdl
 /**
@@ -113,4 +128,4 @@ CHIP DMux {
 }
 ```
 
-![](https://github.com/yucing/co110a/blob/master/S__66715651.jpg)
+![](https://github.com/yucing/co110a/blob/master/picture/Dmux.png)

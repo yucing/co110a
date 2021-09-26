@@ -169,3 +169,35 @@ CHIP Mux8Way16 {
 ```
 
 ![](https://github.com/yucing/co110a/blob/master/picture/Mux8Way16.png)
+
+## DMux4Way
+```hdl
+CHIP DMux4Way {
+    IN in, sel[2];
+    OUT a, b, c, d;
+
+    PARTS:
+    // Put your code here:
+    DMux(in=in, sel=sel[0], a=a, b=b);
+    DMux(in=in, sel=sel[1], a=c, b=d);
+}
+```
+![](https://github.com/yucing/co110a/blob/master/picture/Dmux4Way.png)
+
+## DMux8Way
+```hdl
+CHIP DMux8Way {
+    IN in, sel[3];
+    OUT a, b, c, d, e, f, g, h;
+
+    PARTS:
+    // Put your code here:
+    DMux(in=in, sel=sel[2], a=t1, b=t2);
+    DMux(in=t1, sel=sel[0], a=a, b=b);
+    DMux(in=t2, sel=sel[0], a=e, b=f);
+    DMux(in=t1, sel=sel[1], a=c, b=d);
+    DMux(in=t2, sel=sel[1], a=g, b=h);
+}
+```
+
+![](https://github.com/yucing/co110a/blob/master/picture/Dmux8Way.png)

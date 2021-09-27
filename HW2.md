@@ -201,3 +201,11 @@ CHIP DMux8Way {
 ```
 
 ![](https://github.com/yucing/co110a/blob/master/picture/Dmux8Way.png)
+
+## 迪摩根定律
+
+![](https://github.com/yucing/co110a/blob/master/picture/DeMorgan.png)
+
+## 七段顯示器--e
+
+![](https://github.com/yucing/co110a/blob/master/picture/bool.png)

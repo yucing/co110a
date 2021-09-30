@@ -39,7 +39,7 @@ CHIP Add16 {
 
     PARTS:
    // Put you code here:
-   FullAdder(a=a[0], b=b[0], sum=out[0], carry=t1);
+   FullAdder(a=a[0], b=b[0], c=false, sum=out[0], carry=t1);
    FullAdder(a=a[1], b=b[1], c=t1, carry=t2, sum=out[1]);
    FullAdder(a=a[2], b=b[2], c=t2, carry=t3, sum=out[2]);
    FullAdder(a=a[3], b=b[3], c=t3, carry=t4, sum=out[3]);

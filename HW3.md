@@ -13,6 +13,9 @@ CHIP HalfAdder {
 }
 
 ```
+
+![](https://github.com/yucing/co110a/blob/master/picture/HalfAdder.png)
+
 ## FullAdder
 ```hdl
 CHIP FullAdder {
@@ -31,6 +34,9 @@ CHIP FullAdder {
     Or(a=t4, b=t5, out=carry);
 }
 ```
+
+![](https://github.com/yucing/co110a/blob/master/picture/FullAdder.png)
+
 ## Adder16
 ```hdl
 CHIP Add16 {

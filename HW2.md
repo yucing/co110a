@@ -1,4 +1,6 @@
 # 第二週習題
+## 圖片繪製軟體
+[圖片繪製軟體](https://www.block.tw/bce/)
 ## Not16
 ```hdl
 CHIP Not16 {

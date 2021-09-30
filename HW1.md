@@ -1,4 +1,6 @@
 # 第一章習題
+## 圖片繪製軟體
+[圖片繪製軟體](https://www.block.tw/bce/)
 ## Not
 ```hdl
 /**
@@ -131,4 +133,3 @@ CHIP DMux {
 ![](https://github.com/yucing/co110a/blob/master/picture/Dmux.png)
 
 
-[圖片繪製軟體](https://www.block.tw/bce/)

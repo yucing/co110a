@@ -1,4 +1,6 @@
 # 第三週習題
+## 圖片繪製軟體
+[圖片繪製軟體](https://www.block.tw/bce/)
 ## HalfAdder
 ```hdl
 CHIP HalfAdder {
@@ -62,6 +64,9 @@ CHIP Add16 {
    FullAdder(a=a[14], b=b[14], c=t14, carry=t15, sum=out[14]);
    FullAdder(a=a[15], b=b[15], c=t15, carry=t16, sum=out[15]);
 ```
+
+![](https://github.com/yucing/co110a/blob/master/picture/Add16.png)
+
 ## Inc16
 ```hdl
 CHIP Inc16 {
@@ -89,3 +94,5 @@ CHIP Inc16 {
    HalfAdder(a=in[15], b=t15, carry=t16, sum=out[15]);
 }
 ```
+
+![](https://github.com/yucing/co110a/blob/master/picture/Inc16.png)

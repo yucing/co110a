@@ -1,14 +1,22 @@
-// This file is part of www.nand2tetris.org
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
-// File name: projects/03/a/Register.hdl
+# 第三週習題
+## 圖片繪製軟體
+[圖片繪製軟體](https://www.block.tw/bce/)
+## Bit
+```hdl
+CHIP Bit {
+    IN in, load;
+    OUT out;
 
-/**
- * 16-bit register:
- * If load[t] == 1 then out[t+1] = in[t]
- * else out does not change
- */
+    PARTS:
+    // Put your code here:
+    Mux(a=rt, b=in, sel=load, out=temp);
+    DFF(in=temp, out=rt, out=out);
+}
+```
+![](https://github.com/yucing/co110a/blob/master/picture/Bit.png)
 
+## Register
+```hdl
 CHIP Register {
     IN in[16], load;
     OUT out[16];
@@ -32,3 +40,7 @@ CHIP Register {
     Bit(in=in[14], load=load, out=out[14]);
     Bit(in=in[15], load=load, out=out[15]);
 }
+```
+![](https://github.com/yucing/co110a/blob/master/picture/Register.png)
+
+## RAM8

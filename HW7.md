@@ -35,6 +35,8 @@
 0;JMP
 
 ```
+![](https://github.com/yucing/co110a/blob/master/picture/mult1.png)
+![](https://github.com/yucing/co110a/blob/master/picture/mult2.png)
 
 ## fill
 ```asm
@@ -77,3 +79,5 @@
 29. @10     // 跳到第 10 行
 30. 0;JMP
 ```
+![](https://github.com/yucing/co110a/blob/master/picture/fill1.png)
+![](https://github.com/yucing/co110a/blob/master/picture/fill2.png)

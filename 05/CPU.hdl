@@ -40,4 +40,8 @@ CHIP CPU {
 
     PARTS:
     // Put your code here:
+    Mux16(a=ALURE, b=instruction, sel=, out=Muxin);
+    Register(in=Muxin, load= ,out=Aregister);
+
+    Mux16(a=Aregister, b=inM, )
 }

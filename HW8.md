@@ -1,8 +1,7 @@
 # 第八週習題
-## CPU.hdl
+## CPU 圖
 ![](https://github.com/yucing/co110a/blob/master/picture/CPU1.png)
-![](https://github.com/yucing/co110a/blob/master/picture/CPU2.png)
-```
+```md
 inM : 從資料記憶體來的資料
 instrucion : 從指令記憶體來的資料
 reset : 1 -> 從開機
@@ -11,7 +10,18 @@ writeM : 1 -> 寫入記憶體
 addressM : 寫進哪個記憶體
 PC : 下一個要執行的指令位置
 ```
+## instruction
+![](https://github.com/yucing/co110a/blob/master/picture/CPU3.png)
+```md
+instrution[15] == 0 -> A instruction
+               == 1 -> C instruction
 
+instruction[0..2] -> jump
+instruction[3..5] -> M.D.A
+instruction[6..11] -> no.f.ny.zy.nx.zx
+```
+
+## CPU
 ```hdl
     Not(in=instruction[15], out=ARun);   // 是否為 A 指令
 

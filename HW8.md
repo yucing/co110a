@@ -24,6 +24,21 @@ instruction[6..11] -> no.f.ny.zy.nx.zx
 ## CPU
 ![](https://github.com/yucing/co110a/blob/master/picture/CPU4.png)
 ```hdl
+CHIP CPU {
+
+    IN  inM[16],         // M value input  (M = contents of RAM[A])
+        instruction[16], // Instruction for execution
+        reset;           // Signals whether to re-start the current
+                         // program (reset==1) or continue executing
+                         // the current program (reset==0).
+
+    OUT outM[16],        // M value output
+        writeM,          // Write to M? 
+        addressM[15],    // Address in data memory (of M)
+        pc[15];          // address of next instruction
+
+    PARTS:
+    // Put your code here:
     Not(in=instruction[15], out=ARun);   // 是否為 A 指令
 
     Mux16(a=instruction, b=ALUOut, sel=instruction[15], out=MInst);    // 讀取 A 或 傳入 上一個 ALUout
@@ -52,4 +67,5 @@ instruction[6..11] -> no.f.ny.zy.nx.zx
     And(a=instruction[15], b=CJ2, out=CJ3); // 為 C 指令時運作
 
     PC(in=AreOut, reset=reset, inc=true,load=CJ3,out[0..14]=pc);
+}
 ```

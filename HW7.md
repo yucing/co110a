@@ -81,3 +81,14 @@
 ```
 ![](https://github.com/yucing/co110a/blob/master/picture/fill1.png)
 ![](https://github.com/yucing/co110a/blob/master/picture/fill2.png)
+
+## 跳躍指令
+```
+D;JGT   if D > 0 jump
+D;JGE   if D >= 0 jump
+D;JLT   if D < 0 jump
+D;JLE   if D <= 0 jump
+D;JEQ   if D = 0 jump
+D;JNE   if D != 0 jump
+0;JMP   jump
+```

@@ -22,7 +22,7 @@ instruction[6..11] -> no.f.ny.zy.nx.zx
 ```
 
 ## CPU
-![](https://github.com/yucing/co110a/blob/master/picture/CPU4.png)
+![](https://github.com/yucing/co110a/blob/master/picture/CPU3.png)
 ```hdl
     Not(in=instruction[15], out=ARun);   // 是否為 A 指令
 
